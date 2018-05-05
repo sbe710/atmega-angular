@@ -1,0 +1,13 @@
+<div class="control">
+  <div class="control__relay">
+    <img class="control__icon" src="/assets/icons/power.png" alt="">
+    <label class="control__switch">
+      <input type="checkbox" [checked] = relayState (click) = relayChange()>
+      <span class="control__slider"></span>
+    </label>
+  </div>
+  <div class="control__temp">
+    <label class="button _blue" (click)="getTemp()">Get Temp</label>
+    <span class="control__result">{{temp}}</span>
+  </div>
+</div>

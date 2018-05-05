@@ -1,0 +1,15 @@
+<div class="graph">
+  <div class="graph__chart" #chart>
+    <div *ngIf="chart">
+      <canvas id="canvas">{{ chart }}</canvas>
+    </div>
+  </div>
+  <div class="graph__info" #info>
+    <span class="graph__text">The avarage consumption is <span class="graph__text _orange">{{avgPower}}W</span> per <span class="graph__text _green">{{period}}</span></span>
+  </div>
+  <div class="graph__buttons">
+    <a class="button _green" (click)="getPeriodData($event)">Hour</a>
+    <a class="button _green" (click)="getPeriodData($event)">Day</a>
+    <a class="button _green" (click)="getPeriodData($event)">Week</a>
+  </div>
+</div>

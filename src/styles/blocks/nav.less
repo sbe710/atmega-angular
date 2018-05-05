@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+
+  &__button {
+    &:first-child{
+      border-top-left-radius: 5px;
+    }
+    &:last-child{
+      border-top-right-radius: 5px;
+    }
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+    transition: .4s;
+    &._current {
+      background-color: hsl(0, 0, 78%)
+    }
+    &:hover {
+      background-color: hsl(0, 0, 78%);
+    }
+  }
+}

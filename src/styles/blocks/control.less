@@ -1,0 +1,80 @@
+.control {
+  display: flex;
+  margin: 10px 20px;
+  justify-content: space-between;
+  padding: 5px 20px;
+
+  &__temp {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__relay {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+  }
+
+  &__icon {
+    align-self: center;
+    text-align: -webkit-center;
+    width: 34.4px;
+    height: 34.4px;
+    margin-bottom: 5px;
+  }
+
+  &__result {
+    height: 28px;
+    margin-top: 5px;
+  }
+
+  &__switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  &__switch input {display:none;}
+
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(0, 0, 78%);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+input:checked + .control__slider {
+  background-color: #207dcc;
+}
+
+input:focus + .control__slider {
+  box-shadow: 0 0 1px #207dcc;
+}
+
+input:checked + .control__slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}

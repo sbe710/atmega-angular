@@ -91,13 +91,13 @@ html {
 .control {
   display: flex;
   margin: 10px 20px;
-  justify-content: space-between;
   padding: 5px 20px;
 }
-.control__temp {
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
+.control__frame {
+  width: 40%;
+  margin-left: 40px;
+  background-color: #c7c7c7;
+  border-radius: 5px;
 }
 .control__relay {
   display: flex;
@@ -110,10 +110,6 @@ html {
   width: 34.4px;
   height: 34.4px;
   margin-bottom: 5px;
-}
-.control__result {
-  height: 28px;
-  margin-top: 5px;
 }
 .control__switch {
   position: relative;

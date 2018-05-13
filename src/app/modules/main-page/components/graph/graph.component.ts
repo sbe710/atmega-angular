@@ -35,6 +35,7 @@ export class GraphComponent implements OnInit {
         let power = res.map(res => res.power);
         let allDates = res.map(res => res.dt);
         let temperature = res.map(res => res.temperature);
+        let humidity = res.map(res => res.humidity);
         let dates = [];
         allDates.forEach((res) => {
           let jsDate = new Date(res);

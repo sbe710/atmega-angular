@@ -2,13 +2,17 @@
   display: flex;
   margin: 10px 20px;
   padding: 5px 20px;
+  justify-content: space-between;
+  align-items: center;
 
   &__frame {
     width:  40%;
-    margin-left: 40px;
+    margin: 0 40px;
     background-color: hsl(0, 0, 78%);
     border-radius: 5px;
+    align-self: stretch;
   }
+
   &__relay {
     display: flex;
     align-self: flex-end;
@@ -21,6 +25,10 @@
     width: 34.4px;
     height: 34.4px;
     margin-bottom: 5px;
+  }
+
+  &__button {
+    align-self: center;
   }
 
   &__switch {

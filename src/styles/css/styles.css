@@ -92,12 +92,15 @@ html {
   display: flex;
   margin: 10px 20px;
   padding: 5px 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 .control__frame {
   width: 40%;
-  margin-left: 40px;
+  margin: 0 40px;
   background-color: #c7c7c7;
   border-radius: 5px;
+  align-self: stretch;
 }
 .control__relay {
   display: flex;
@@ -110,6 +113,9 @@ html {
   width: 34.4px;
   height: 34.4px;
   margin-bottom: 5px;
+}
+.control__button {
+  align-self: center;
 }
 .control__switch {
   position: relative;
@@ -156,7 +162,6 @@ input:checked + .control__slider:before {
   transform: translateX(26px);
 }
 .button {
-  height: 100%;
   border-radius: 5px;
   padding: 5px 15px;
   text-align: center;
